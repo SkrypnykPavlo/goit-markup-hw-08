@@ -1,0 +1,36 @@
+.features {
+  display: flex;
+  gap: 30px;
+
+  &__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+
+  &__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-team-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    height: 120px;
+    height: 120px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    color: var(--secondary-text-color);
+    font-size: 14px;
+    line-height: 1.7;
+
+    letter-spacing: 0.03em;
+  }
+}

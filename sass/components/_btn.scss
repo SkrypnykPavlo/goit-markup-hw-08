@@ -1,0 +1,115 @@
+.btn {
+  color: var(--background-heder-color);
+  background: var(--accent-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  padding: 10px 32px;
+
+  transition: background-color var(--time-function);
+
+  &:hover,
+  &:focus {
+    background-color: #0686ee;
+  }
+}
+.modal-btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--background-heder-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
+}
+
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+  fill: var(--accent-text-color);
+}
+
+.modal-btn-send {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  width: 200px;
+  height: 50px;
+  margin-top: 30px;
+
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  padding: 10px 55px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+
+  color: var(--background-heder-color);
+
+  transition: background-color var(--time-function);
+}
+
+.modal-btn-send:focus-within,
+.modal-btn-send:hover {
+  background-color: var(--accent-text-color);
+}
+/* Portfolio */
+.navigation-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 34px;
+
+  &__list {
+    margin-right: 8px;
+  }
+
+  &__list:last-child {
+    margin-right: 0px;
+  }
+
+  &__item {
+    transition: color var(--time-function),
+      background-color var(--time-function), box-shadow var(--time-function);
+    color: var(--primery-text-color);
+    background-color: var(--background-team-color);
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border-radius: 4px;
+    border: 0px;
+    padding: 6px 22px;
+  }
+
+  &__item:focus,
+  &__item:hover {
+    color: var(--background-heder-color);
+    background-color: var(--accent-text-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+  }
+}

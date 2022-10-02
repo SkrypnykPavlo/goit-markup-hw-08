@@ -1,0 +1,24 @@
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+
+  &__item {
+    margin-right: 50px;
+  }
+  &__item:last-child {
+    margin-right: 0px;
+  }
+  &__link {
+    display: flex;
+    color: var(--secondary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    transition: color var(--time-function);
+  }
+  &__link:hover,
+  &__link:focus {
+    color: var(--accent-text-color);
+  }
+}

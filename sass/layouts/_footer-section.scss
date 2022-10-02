@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  background-color: var(--footer-hero-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__section {
+    margin-right: 70px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+}

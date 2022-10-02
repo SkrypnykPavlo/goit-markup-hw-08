@@ -1,0 +1,126 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  scale: (1);
+
+  min-width: 528px;
+  min-height: 581px;
+
+  background-color: var(--background-heder-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px;
+
+  transition: transform var(--time-function);
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, 50%) scale(1.1);
+}
+
+input,
+textarea {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.client-info__title {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+  color: var(--main-color);
+}
+
+.client-info_input-txt {
+  height: 40px;
+  width: 100%;
+  padding-left: 42px;
+
+  transition: border-color var(--time-function);
+}
+
+.input-field:focus-within .client-info_input-txt,
+.input-field:hover .client-info_input-txt {
+  border-color: var(--accent-text-color);
+  outline-color: var(--accent-text-color);
+}
+
+.input-field:focus-within .client-info__icon-input,
+.input-field:hover .client-info__icon-input {
+  fill: var(--accent-text-color);
+}
+
+.client-info__comment:focus-within,
+.client-info__comment:hover {
+  border-color: var(--accent-text-color);
+  outline-color: var(--accent-text-color);
+}
+
+.client-info__name,
+.client-info__telephone,
+.client-info__mail {
+  display: flex;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-text-color);
+}
+
+.client-info__label {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+}
+
+.client-info__label {
+  display: block;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: var(--secondary-text-color);
+
+  margin-bottom: 4px;
+}
+
+.client-info__comment {
+  display: flex;
+  width: 100%;
+  resize: none;
+  margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+
+  transition: border-color var(--time-function);
+}
+
+.input-field {
+  position: relative;
+  display: flex;
+}
+
+.client-info__icon-input {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 12px;
+
+  transition: fill var(--time-function);
+}

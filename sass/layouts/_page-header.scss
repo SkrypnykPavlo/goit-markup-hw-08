@@ -1,0 +1,22 @@
+.page-header {
+  background-color: var(--background-heder-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
+.envelope-icon,
+.phone-icon {
+  display: block;
+  margin-right: 10px;
+  fill: currentColor;
+}

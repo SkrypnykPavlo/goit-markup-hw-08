@@ -1,0 +1,27 @@
+.address__link {
+  font-style: normal;
+  color: var(--background-heder-color);
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  transition: color var(--time-function);
+}
+.address__contact-link {
+  font-style: normal;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--time-function);
+}
+.address__link:hover,
+.address__link:focus,
+.address__contact-link:hover,
+.address__contact-link:focus {
+  color: var(--accent-text-color);
+}
+
+.address__list {
+  margin-bottom: 9px;
+}
+.address__list:last-child {
+  margin-bottom: 0;
+}
