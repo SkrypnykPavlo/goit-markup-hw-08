@@ -1,25 +1,25 @@
+/* /Стилізація logo */
 .logo {
-  color: var(--logo-color);
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  margin-right: 93px;
+    display: block;
+
+    font-family: var(--brand-logo-font), sans-serif;
+    font-weight: 700;
+    color: var(--brand-main-color);
+    font-size: 24px;
+    line-height: 1.16;
+    
+    @media screen and (min-width: $desktop) {
+            font-size: 26px;
+            line-height: 1.19;
+        }
 }
-.logo-header {
-  color: var(--accent-text-color);
+
+.logo__dark {
+    color: var(--logo-positive-color);
 }
-.logo-footer {
-  font-family: "Raleway", sans-serif;
-  display: inline-block;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  margin-bottom: 20px;
+
+.logo__light {
+    color: var(--logo-negative-color);
 }
-.logo-light {
-  color: var(--background-heder-color);
-}
+/* /Стилізація logo */
+
