@@ -653,7 +653,7 @@ button {
 /* todo Закріпити хедер */
 /* ========== ВЕРХНІЙ РЯДОК ========== */
 .header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 /* навігація (flex для лого+меню)*/
@@ -789,7 +789,7 @@ button {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0px;
+    bottom: -3%;
     width: 100%;
     height: 4px;
     border-radius: 2px;
@@ -1817,14 +1817,18 @@ button {
 
 /* фарбуємо оутлайн полів вводу при ховері, фокусі і коли курсор у полі введення */
 .modal__label:focus .modal__input,
-.modal__input:focus-within {
+.modal__input:focus-within,
+.modal__label:hover .modal__input,
+.modal__input:hover {
   border-color: var(--brand-main-color);
   outline-width: 0;
 }
 
 /* фарбуємо іконки по ховеру і фокусу, а також коли курсор у полі введення */
 .modal__label:focus .modal__icon,
-.modal__label:focus-within .modal__icon {
+.modal__label:focus-within .modal__icon,
+.modal__label:hover .modal__icon,
+.modal__label:hover .modal__icon {
   color: var(--brand-main-color);
 }
 
