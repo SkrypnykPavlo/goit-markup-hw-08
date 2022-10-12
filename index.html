@@ -7,28 +7,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebStudio</title>
 
+  <!-- шрифти -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" />
 
+  <!-- стилі -->
   <!-- <link rel="stylesheet" href="./css/modern-normalize.css" /> -->
   <link rel="stylesheet" href="./css/main.min.css" />
   <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
 </head>
 
 <body>
+  <!-- верхній рядок -->
   <header class="header">
     <div class="container">
+      <!-- Навігація-->
       <nav class="nav nav-position">
+        <!-- логотип -->
         <a href="./" class="logo nav__logo">
           Web<span class="logo__dark">Studio</span>
         </a>
+
+        <!-- Контейнер для меню -->
         <div class="menu-container" id="id-menu-container" data-menu>
+          <!-- Меню навігації по сторінкам сайту -->
           <ul class="menu">
             <li class="menu__item">
               <a href="./" class="menu__link menu__link--current">Студія</a>
             </li>
+
             <li class="menu__item">
               <a href="./portfolio.html" class="menu__link"> Портфоліо </a>
             </li>
@@ -36,6 +45,8 @@
               <a href="./" class="menu__link">Контакти</a>
             </li>
           </ul>
+
+          <!-- Меню контактів  в хедері -->
           <ul class="contacts">
             <li class="contacts__item">
               <a href="mailto:info@devstudio.com" class="contacts__link contacts__link--email">
@@ -55,6 +66,7 @@
             </li>
           </ul>
 
+          <!-- соціальні мережі у меню мобільного хедера -->
           <ul class="socials-mobile-menu">
             <li class="socials-mobile-menu__item">
               <a class="socials-mobile-menu__link" href="https://www.instagram.com/" target="_blank"
@@ -75,6 +87,7 @@
           </ul>
         </div>
 
+        <!-- Кнопка відкриття меню у мобільній версії -->
         <button type="button" class="btn-mobile" aria-expanded="false" aria-controls="id-menu-container"
           data-menu-button>
           <svg class="btn-mobile__icon" aria-label="Перемикач мобільного меню">
@@ -86,7 +99,9 @@
       </nav>
     </div>
   </header>
+
   <main>
+    <!-- Секція героя -->
     <section class="hero">
       <div class="container">
         <h1 class="hero__title">
@@ -100,6 +115,7 @@
       </div>
     </section>
 
+    <!-- особливості  -->
     <section class="section">
       <div class="container">
         <h2 class="section__title visually-hidden">
@@ -161,9 +177,11 @@
       </div>
     </section>
 
+    <!-- чим ми займаємось -->
     <section class="section section--null-padding-top section--hidden">
       <div class="container">
         <h2 class="section__title">Чим ми займаємось</h2>
+        <!-- блок світлин -->
         <ul class="offers">
           <li class="offers__item">
             <div class="offers__icon-box">
@@ -198,9 +216,11 @@
       </div>
     </section>
 
+    <!-- наша команда -->
     <section class="section section--bg-grey">
       <div class="container">
         <h2 class="section__title">Наша команда</h2>
+        <!-- блок карток співробітників -->
         <ul class="employee">
           <li class="employee__item">
             <picture>
@@ -445,6 +465,7 @@
       </div>
     </section>
 
+    <!-- постійні клієнти -->
     <section class="section">
       <div class="container">
         <h2 class="section__title">Постійні клієнти</h2>
@@ -497,9 +518,12 @@
     </section>
   </main>
 
-
+  <!-- footer -->
   <footer class="footer">
     <div class="container container__footer">
+      <!-- група у три стовпчики -->
+      <!-- <div class="footer__columns"> -->
+      <!-- Стовпчик №1 - контакти -->
       <div class="footer__box">
         <a href="./" class="logo footer__logo">Web<span class="logo__light">Studio</span></a>
 
@@ -521,6 +545,7 @@
         </address>
       </div>
 
+      <!-- Стовпчик №2 Соцпережі -->
       <div class="footer__box">
         <h3 class="footer__title">Долучайтесь</h3>
 
@@ -563,6 +588,8 @@
         </ul>
       </div>
 
+      <!-- Стовпчик №3 Підписка -->
+      <!-- <div class=""> -->
       <form class="footer__box footer__box--subscribe">
         <div class="footer__subscribe-box">
           <label for="subscribe" class="footer__title">Підпишіться на розсилку</label>
@@ -575,10 +602,13 @@
           </svg>
         </button>
       </form>
-
+      <!-- </div> -->
+      <!-- </div> -->
     </div>
   </footer>
 
+  <!-- ========== МОДАЛЬНЕ ВІКНО ========== -->
+  <!-- Оверлей модального вікна -->
   <div class="backdrop is-hidden" data-modal>
     <form autocomplete="on" class="modal">
       <p class="modal__header">Залиште свої дані, ми вам передзвонимо</p>
@@ -622,7 +652,10 @@
       </div>
 
       <label class="agreement__label">
+        <!-- value="accept" не обов'язково, тому що чекбокс тільки один і його не треба персоналізовувати серез інших чекбоксів -->
         <input type="checkbox" name="accepting" value="accept" class="agreement__checkbox visually-hidden" />
+        <!-- Варіант від Олеексія Репіна -->
+        <!-- <span class="fake-checkbox"></span> -->
         <svg class="agreement__icon">
           <use href="./images/background/icons.svg#modal-checked"></use>
         </svg>
@@ -641,7 +674,11 @@
     </form>
   </div>
 
+  <!-- скріпт для модельного вікна -->
   <script src="./js/modal.js"></script>
+  <!--  data-modal-open - на кнопку відкриття модального вікна.
+          data-modal-close - на кнопку закриття модального вікна.
+          data-modal - на бекдроп модального вікна. -->
   <script src="./js/mobile-menu.js"></script>
 </body>
 
